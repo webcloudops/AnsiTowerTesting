@@ -1,0 +1,11 @@
+---
+- hosts: Ansi_node
+  become: yes
+  become_user: root
+  gather_facts: true
+
+  tasks:
+  - name : Running shell command
+    shell: echo "# AnsiTower" >> README.md
+    args:
+       chdir: /home/ec2-user
