@@ -1,5 +1,6 @@
 ---
-- become: yes
+- hosts: Ansi_Node
+  become: yes
   become_user: root
   gather_facts: true
 
